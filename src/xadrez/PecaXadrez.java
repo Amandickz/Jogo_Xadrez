@@ -1,14 +1,15 @@
 package xadrez;
 
 import tabuleiro.Peca;
-import tabuleiro.Posicao;
+
+import tabuleiro.Tabuleiro;
 
 public class PecaXadrez extends Peca {
 
     private Cor cor;
 
-    public PecaXadrez(Posicao posicao, Cor cor) {
-        super(posicao);
+    public PecaXadrez(Tabuleiro tabuleiro, Cor cor) {
+        super(tabuleiro);
         this.cor = cor;
     }
 
