@@ -1,11 +1,13 @@
-import tabuleiro.Tabuleiro;
+import aplicacao.Interface;
+import xadrez.PartidaXadrez;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        Tabuleiro tabuleiro = new Tabuleiro(8, 8);
+        PartidaXadrez partida = new PartidaXadrez();
+        Interface.imprimirTabuleiro(partida.getPecas());
 
     }
 }
