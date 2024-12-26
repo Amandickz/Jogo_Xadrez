@@ -1,4 +1,4 @@
-import aplicacao.Interface;
+import aplicacao.UI;
 import chess.ChessMatch;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         ChessMatch partida = new ChessMatch();
-        Interface.imprimirTabuleiro(partida.getPieces());
+        UI.printBoard(partida.getPieces());
 
     }
 }
