@@ -1,10 +1,10 @@
 package aplicacao;
 
-import xadrez.PecaXadrez;
+import chess.ChessPiece;
 
 public class Interface {
 
-    public static void imprimirTabuleiro(PecaXadrez[][] pecas) {
+    public static void imprimirTabuleiro(ChessPiece[][] pecas) {
         for (int i = 0; i < pecas.length; i++) {
             System.out.print((8 - i) + " ");
             for (int j = 0; j < pecas[i].length; j++) {
@@ -15,7 +15,7 @@ public class Interface {
         System.out.println("  a b c d e f g h");
     }
 
-    public static void imprimirPeca(PecaXadrez peca) {
+    public static void imprimirPeca(ChessPiece peca) {
         if(peca == null) {
             System.out.print("-");
         } else {
